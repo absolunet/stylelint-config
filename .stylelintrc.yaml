@@ -153,8 +153,9 @@ rules:
   declaration-property-unit-blacklist:                null  # via unit-whitelist
   declaration-property-unit-whitelist:                null  # via unit-whitelist
   declaration-property-value-blacklist:
-    - /^border/:     none
+    - /^border/:     /none|rem-calc/
       /^transition/: /all/
+      /.*/:          /rem-calc/
 
   declaration-property-value-whitelist:               null  # via declaration-property-value-blacklist
 
@@ -170,11 +171,11 @@ rules:
   selector-class-pattern:
     - ^([a-z][a-z0-9]*)(-[a-z0-9]+)*$
     - resolveNestedSelectors: true
-      message:                Class selector must be kebab-case
+      message:                Class selector must be kebab-case (selector-class-pattern)
 
   selector-id-pattern:
     - /\s\S/
-    - message: Unexpected id selector
+    - message: Unexpected id selector (selector-id-pattern)
 
   selector-max-attribute:                null
   selector-max-class:                    null
@@ -205,7 +206,7 @@ rules:
   # At-rule
   at-rule-blacklist:
     - extend
-    - message: Unexpected @extend directive
+    - message: Unexpected @extend directive (at-rule-blacklist)
 
   at-rule-no-vendor-prefix: true
   at-rule-whitelist:        null  # via at-rule-blacklist
@@ -427,12 +428,23 @@ rules:
       - font-weight
 
     - ignoreKeywords:
+        z-index:
+          - '-1'
+          - auto
+          - inherit
+
         /color/:
           - transparent
-          - inherit
           - currentColor
+          - inherit
+
+        font-family:
+          - inherit
 
         font-size:
+          - inherit
+
+        font-weight:
           - inherit
 
 
@@ -455,7 +467,7 @@ rules:
   scss/at-function-parentheses-space-before: never
   scss/at-function-pattern:
     - ^([a-z][a-z0-9]*)(-[a-z0-9]+)*$
-    - message: Function name must be kebab-case
+    - message: Function name must be kebab-case (scss/at-function-pattern)
 
   # @-if
   scss/at-if-closing-brace-newline-after: always-last-in-chain
@@ -474,7 +486,7 @@ rules:
   scss/at-mixin-parentheses-space-before:      never
   scss/at-mixin-pattern:
     - ^([a-z][a-z0-9]*)(-[a-z0-9]+)*(-styles|-image)$
-    - message: Mixin name must be kebab-case and suffixed with -styles | -image
+    - message: Mixin name must be kebab-case and suffixed with -styles | -image (scss/at-mixin-pattern)
 
   # @-rule
   scss/at-rule-no-unknown: true
@@ -487,7 +499,7 @@ rules:
   scss/dollar-variable-no-missing-interpolation: true
   scss/dollar-variable-pattern:
     - ^([a-z][a-z0-9]*)(-[a-z0-9]+)*$
-    - message: Variable name must be kebab-case
+    - message: Variable name must be kebab-case (scss/dollar-variable-pattern)
 
   # %-placeholder
   scss/percent-placeholder-pattern: null  # via at-rule-blacklist
