@@ -14,7 +14,7 @@ charset = utf-8
 trim_trailing_whitespace = false
 insert_final_newline = true
 
-[{.editorconfig,.gitignore,.npmignore,.stylelintrc.yaml,.sublimelinterrc,package.json}]
+[{.editorconfig,.gitignore,.npmignore,.stylelintrc.yaml,package.json}]
 indent_style = space
 indent_size = 2
 charset = utf-8

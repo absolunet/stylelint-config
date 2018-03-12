@@ -173,6 +173,9 @@ rules:
     - resolveNestedSelectors: true
       message:                Class selector must be kebab-case (selector-class-pattern)
 
+  selector-combinator-blacklist:         null
+  selector-combinator-whitelist:         null
+
   selector-id-pattern:
     - /\s\S/
     - message: Unexpected id selector (selector-id-pattern)
@@ -191,6 +194,8 @@ rules:
   selector-no-vendor-prefix:             true
   selector-pseudo-class-blacklist:       null
   selector-pseudo-class-whitelist:       null
+  selector-pseudo-element-blacklist:     null
+  selector-pseudo-element-whitelist:     null
 
 
   # Media feature
@@ -493,8 +498,9 @@ rules:
 
   # $-variable
   scss/dollar-variable-colon-newline-after:      null
-  scss/dollar-variable-colon-space-after:        null  # TODO: Reactivate when at least one space
+  scss/dollar-variable-colon-space-after:        at-least-one-space
   scss/dollar-variable-colon-space-before:       never
+  scss/dollar-variable-default:                  null
   scss/dollar-variable-empty-line-before:        null
   scss/dollar-variable-no-missing-interpolation: true
   scss/dollar-variable-pattern:
