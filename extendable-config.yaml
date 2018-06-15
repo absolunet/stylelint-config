@@ -112,6 +112,10 @@ rules:
   number-max-precision: 10
 
 
+  # Keyframes
+  keyframes-name-pattern: ^([a-z][a-z0-9]*)(-[a-z0-9]+)*(-animation)$
+
+
   # Time
   time-min-milliseconds: null
 
@@ -186,6 +190,7 @@ rules:
   selector-max-compound-selectors:       null
   selector-max-empty-lines:              0
   selector-max-id:                       null
+  selector-max-pseudo-class:             null
   selector-max-specificity:              null
   selector-max-type:                     null
   selector-max-universal:                0
@@ -201,6 +206,7 @@ rules:
   # Media feature
   media-feature-name-blacklist:        null
   media-feature-name-no-vendor-prefix: true
+  media-feature-name-value-whitelist:  null
   media-feature-name-whitelist:        null
 
 
@@ -532,6 +538,9 @@ rules:
 
   # Selector
   scss/selector-no-redundant-nesting-selector: true
+
+  # General / Sheet
+  no-duplicate-dollar-variables: true
 
 
 
