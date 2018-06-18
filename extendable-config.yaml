@@ -540,7 +540,7 @@ rules:
   scss/selector-no-redundant-nesting-selector: true
 
   # General / Sheet
-  scss/no-duplicate-dollar-variables: true
+  scss/no-duplicate-dollar-variables: null
 
 
 
