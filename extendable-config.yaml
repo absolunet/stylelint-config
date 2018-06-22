@@ -433,6 +433,7 @@ rules:
   #-- Declaration strict value
   scale-unlimited/declaration-strict-value:
     - - z-index
+      - /-radius/
       - /color/
       - font-family
       - font-size
