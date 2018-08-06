@@ -445,6 +445,9 @@ rules:
           - auto
           - inherit
 
+        /-radius/:
+          - inherit
+
         /color/:
           - transparent
           - currentColor
