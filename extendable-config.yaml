@@ -414,10 +414,12 @@ rules:
 
   # General / Sheet
   indentation:                      tab
+  linebreaks:                       unix
   max-empty-lines:                  null
   max-line-length:                  null
   no-eol-whitespace:                true
   no-missing-end-of-source-newline: true
+  no-empty-first-line:              true
 
 
 
@@ -544,7 +546,10 @@ rules:
   scss/selector-no-redundant-nesting-selector: true
 
   # General / Sheet
-  scss/no-duplicate-dollar-variables: null
+  scss/no-dollar-variables: null
+  scss/no-duplicate-dollar-variables:
+    - true
+    - ignoreInside: at-rule
 
 
 
