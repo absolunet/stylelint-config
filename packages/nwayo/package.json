@@ -26,9 +26,6 @@
     "node": ">= 11.2.0"
   },
   "main": "index.js",
-  "scripts": {
-    "test": "ava"
-  },
   "dependencies": {
     "@absolunet/stylelint-loader": "^1.0.0",
     "stylelint": "9.8.0",
