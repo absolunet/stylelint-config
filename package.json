@@ -1,41 +1,16 @@
 {
-  "name": "@absolunet/stylelint-config-nwayo",
-  "version": "1.1.0",
-  "description": "stylelint config - nwayo",
-  "definition": "",
-  "homepage": "https://github.com/absolunet/stylelint-config-nwayo",
-  "keywords": [
-    "stylelint",
-    "stylelintconfig",
-    "stylelint-config"
-  ],
-  "author": {
-    "name": "Absolunet",
-    "url": "https://absolunet.com"
-  },
-  "license": "MIT",
-  "repository": {
-    "url": "git://github.com/absolunet/stylelint-config-nwayo.git",
-    "type": "git"
-  },
-  "bugs": {
-    "url": "https://github.com/absolunet/stylelint-config-nwayo/issues"
-  },
-  "engines": {
-    "node": ">= 10.12.0"
-  },
-  "main": "index.js",
+  "name": "stylelint-config",
+  "private": true,
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "postinstall": "rm -rf packages/*/package-lock.json; lerna clean --yes; lerna bootstrap --no-ci",
+    "outdated": "node manager.js --task=outdated",
+    "build": "node manager.js --task=build",
+    "deploy": "node manager.js --task=deploy"
   },
   "devDependencies": {
-    "@absolunet/tester": "2.3.0"
-  },
-  "dependencies": {
-    "@absolunet/stylelint-loader": "^1.0.0",
-    "stylelint": "9.6.0",
-    "stylelint-declaration-strict-value": "1.0.4",
-    "stylelint-order": "1.0.0",
-    "stylelint-scss": "3.3.2"
+    "@absolunet/manager": "0.2.3",
+    "@absolunet/tester": "2.4.1",
+    "lerna": "3.4.3"
   }
 }

@@ -1,18 +1,21 @@
-# @absolunet/stylelint-config-nwayo
+# stylelint config
+[![Travis CI](https://api.travis-ci.org/absolunet/stylelint-config.svg?branch=master)](https://travis-ci.org/absolunet/stylelint-config/builds)
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 
-[![npm](https://img.shields.io/npm/v/@absolunet/stylelint-config-nwayo.svg)](https://www.npmjs.com/package/@absolunet/stylelint-config-nwayo)
-[![npm dependencies](https://david-dm.org/absolunet/stylelint-config-nwayo/status.svg)](https://david-dm.org/absolunet/stylelint-config-nwayo)
-[![npms](https://badges.npms.io/%40absolunet%2Fstylelint-config-nwayo.svg)](https://npms.io/search?q=%40absolunet%2Fstylelint-config-nwayo)
-[![Travis CI](https://api.travis-ci.org/absolunet/stylelint-config-nwayo.svg?branch=master)](https://travis-ci.org/absolunet/stylelint-config-nwayo/builds)
+Opinionated stylelint [extendable config](https://stylelint.io/user-guide/configuration/#extends).
 
-> stylelint config - nwayo
 
-Opinionated stylelint [extendable config](https://stylelint.io/user-guide/configuration/#extends) for [nwayo](https://absolunet.github.io/nwayo).
+## Rulesets
+
+| Package | Version | Description |
+|---|---|---|
+| [@absolunet/stylelint-config-nwayo](packages/nwayo) | [![npm](https://img.shields.io/npm/v/@absolunet/stylelint-config-nwayo.svg)](https://www.npmjs.com/package/@absolunet/stylelint-config-nwayo) | [nwayo](https://absolunet.github.io/nwayo/) rules |
+
 
 ## Install
 
 ```
-$ npm i @absolunet/stylelint-config-nwayo
+$ npm install @absolunet/stylelint-config-[RULESET]
 ```
 
 
@@ -21,8 +24,15 @@ $ npm i @absolunet/stylelint-config-nwayo
 Add some stylelint config to your `.stylelintrc.yaml`:
 
 ```yaml
-extends: '@absolunet/stylelint-config-nwayo'
+extends: '@absolunet/stylelint-config-[RULESET]'
 ```
+
+
+## Used plugins
+
+- [stylelint-declaration-strict-value](https://github.com/AndyOGo/stylelint-declaration-strict-value) - Enforces variables, functions, keywords for property's values
+- [stylelint-order](https://github.com/hudochenkov/stylelint-order) - Order related linting rules
+- [stylelint-scss](https://github.com/kristerkari/stylelint-scss) - SCSS specific linting rules
 
 
 ## Related

@@ -1,0 +1,39 @@
+{
+  "name": "@absolunet/stylelint-config-nwayo",
+  "version": "1.1.0",
+  "description": "stylelint config - nwayo",
+  "definition": "",
+  "homepage": "https://github.com/absolunet/stylelint-config",
+  "keywords": [
+    "nwayo",
+    "stylelint",
+    "stylelintconfig",
+    "stylelint-config"
+  ],
+  "author": {
+    "name": "Absolunet",
+    "url": "https://absolunet.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "url": "git://github.com/absolunet/stylelint-config.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/absolunet/stylelint-config/issues"
+  },
+  "engines": {
+    "node": ">= 11.2.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "@absolunet/stylelint-loader": "^1.0.0",
+    "stylelint": "9.6.0",
+    "stylelint-declaration-strict-value": "1.0.4",
+    "stylelint-order": "1.0.0",
+    "stylelint-scss": "3.3.2"
+  }
+}
