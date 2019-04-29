@@ -33,6 +33,7 @@ rules:
 
 
   # Function
+  function-calc-no-invalid:                          true
   function-calc-no-unspaced-operator:                true
   function-linear-gradient-no-nonstandard-direction: true
 
@@ -219,8 +220,9 @@ rules:
     - extend
     - message: Unexpected @extend directive (at-rule-blacklist)
 
-  at-rule-no-vendor-prefix: true
-  at-rule-whitelist:        null  # via at-rule-blacklist
+  at-rule-no-vendor-prefix:     true
+  at-rule-property-requirelist: null
+  at-rule-whitelist:            null  # via at-rule-blacklist
 
 
   # Comment
@@ -543,6 +545,7 @@ rules:
   scss/partial-no-import: null
 
   # Selector
+  scss/selector-nest-combinators: null
   scss/selector-no-redundant-nesting-selector: true
 
   # General / Sheet

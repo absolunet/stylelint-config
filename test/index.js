@@ -9,5 +9,5 @@ const tester = require('@absolunet/tester');
 tester.npmPackage.validateMulti();
 
 tester.npmPackage.multiPackagesPaths.forEach((path) => {
-	tester.npmPackage.validateStylelintConfig({ cwd:path });
+	tester.npmPackage.validateStylelintConfig({ cwd: path });
 });
