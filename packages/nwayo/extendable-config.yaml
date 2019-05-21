@@ -33,7 +33,7 @@ rules:
 
 
   # Function
-  function-calc-no-invalid:                          true
+  function-calc-no-invalid:                          null  # conflicts with SCSS variables
   function-calc-no-unspaced-operator:                true
   function-linear-gradient-no-nonstandard-direction: true
 

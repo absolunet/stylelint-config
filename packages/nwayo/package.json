@@ -1,6 +1,6 @@
 {
   "name": "@absolunet/stylelint-config-nwayo",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "stylelint config - nwayo",
   "definition": "",
   "homepage": "https://github.com/absolunet/stylelint-config",
@@ -23,14 +23,14 @@
     "url": "https://github.com/absolunet/stylelint-config/issues"
   },
   "engines": {
-    "node": ">= 11.14.0"
+    "node": ">= 12.1.0"
   },
   "main": "index.js",
   "dependencies": {
     "@absolunet/stylelint-loader": "^1.1.0",
     "stylelint": "10.0.1",
-    "stylelint-declaration-strict-value": "1.1.2",
+    "stylelint-declaration-strict-value": "1.1.3",
     "stylelint-order": "3.0.0",
-    "stylelint-scss": "3.6.0"
+    "stylelint-scss": "3.6.1"
   }
 }
