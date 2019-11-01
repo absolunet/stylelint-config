@@ -1,6 +1,6 @@
 //--------------------------------------------------------
-//-- stylelint config
+//-- Tester
 //--------------------------------------------------------
-'use strict';
+import { tester } from '@absolunet/tester';
 
-module.exports = require('@absolunet/stylelint-loader')(__dirname);
+tester.genericRepositoryTests();
