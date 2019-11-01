@@ -12,6 +12,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Changed
 - META: Migration to @absolunet/manager 2 and @absolunet/tester 3
+- Update to stylelint-order 3.1.1
+- Update to stylelint-declaration-strict-value 1.1.6
+
+#### Update to stylelint 11.1.1
+- Added `unicode-bom` rule
+
+#### Update to stylelint-scss 3.12.0
+- Added `scss/at-each-key-value-single-line` rule
+- Added `scss/at-if-no-null` rule
+- Added `scss/at-import-partial-extension` rule
+- Added `scss/at-rule-conditional-no-parentheses` rule
+- Added `scss/dimension-no-non-numeric-values` rule
+- Added `scss/function-quote-no-quoted-strings-inside` rule
+- Added `scss/function-unquote-no-unquoted-strings-inside` rule
+- Added `scss/map-keys-quotes` rule
+- Added `scss/selector-no-union-class-name` rule
+- Added `scss/no-duplicate-mixins` rule
 
 
 
