@@ -422,6 +422,7 @@ rules:
   no-eol-whitespace:                true
   no-missing-end-of-source-newline: true
   no-empty-first-line:              true
+  unicode-bom:                      never
 
 
 
@@ -472,6 +473,9 @@ rules:
 
   #-- SCSS
 
+  # @-each
+  scss/at-each-key-value-single-line: true
+
   # @-else
   scss/at-else-closing-brace-newline-after: always-last-in-chain
   scss/at-else-closing-brace-space-after:   null
@@ -491,9 +495,11 @@ rules:
   # @-if
   scss/at-if-closing-brace-newline-after: always-last-in-chain
   scss/at-if-closing-brace-space-after:   null
+  scss/at-if-no-null: true
 
   # @-import
   scss/at-import-no-partial-leading-underscore: true
+  scss/at-import-partial-extension:             never
   scss/at-import-partial-extension-blacklist:   null  # via scss/at-import-partial-extension-whitelist
   scss/at-import-partial-extension-whitelist:         # TODO: Revise css vs scss fallback width Dart
     - scss
@@ -508,6 +514,7 @@ rules:
     - message: Mixin name must be kebab-case and suffixed with -styles | -image (scss/at-mixin-pattern)
 
   # @-rule
+  scss/at-rule-conditional-no-parentheses: true
   scss/at-rule-no-unknown: true
 
   # $-variable
@@ -524,6 +531,9 @@ rules:
   # %-placeholder
   scss/percent-placeholder-pattern: null  # via at-rule-blacklist
 
+  # Comment
+  scss/comment-no-loud: null
+
   # //-comment
   scss/double-slash-comment-empty-line-before: null
   scss/double-slash-comment-inline:            null
@@ -532,6 +542,17 @@ rules:
   # Declaration
   scss/declaration-nested-properties:                   never
   scss/declaration-nested-properties-no-divided-groups: null   # via scss/declaration-nested-properties
+
+  # Dimension
+  scss/dimension-no-non-numeric-values: true
+
+  # Function
+  scss/function-color-relative:                     null
+  scss/function-quote-no-quoted-strings-inside:     true
+  scss/function-unquote-no-unquoted-strings-inside: true
+
+  # Map
+  scss/map-keys-quotes: always
 
   # Media feature
   scss/media-feature-value-dollar-variable: always
@@ -545,14 +566,16 @@ rules:
   scss/partial-no-import: null
 
   # Selector
-  scss/selector-nest-combinators: null
+  scss/selector-nest-combinators:              null
   scss/selector-no-redundant-nesting-selector: true
+  scss/selector-no-union-class-name:           true
 
   # General / Sheet
   scss/no-dollar-variables: null
   scss/no-duplicate-dollar-variables:
     - true
     - ignoreInside: at-rule
+  scss/no-duplicate-mixins: true
 
 
 
