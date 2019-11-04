@@ -18,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 #### Update to stylelint 11.1.1
 - Added `unicode-bom` rule
 
-#### Update to stylelint-scss 3.12.0
+#### Update to stylelint-scss 3.12.1
 - Added `scss/at-each-key-value-single-line` rule
 - Added `scss/at-if-no-null` rule
 - Added `scss/at-import-partial-extension` rule
