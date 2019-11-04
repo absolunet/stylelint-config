@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased]
+
+
+
+## [1.3.0] - 2019-11-04
 ### Changed
 - META: Migration to @absolunet/manager 2 and @absolunet/tester 3
 - Update to stylelint-order 3.1.1
@@ -155,7 +159,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-[Unreleased]: https://github.com/absolunet/stylelint-config/compare/1.2.1...HEAD
+[Unreleased]: https://github.com/absolunet/stylelint-config/compare/1.3.0...HEAD
+[1.3.0]:      https://github.com/absolunet/stylelint-config/compare/1.2.1...1.3.0
 [1.2.1]:      https://github.com/absolunet/stylelint-config/compare/1.2.0...1.2.1
 [1.2.0]:      https://github.com/absolunet/stylelint-config/compare/1.1.1...1.2.0
 [1.1.1]:      https://github.com/absolunet/stylelint-config/compare/1.1.0...1.1.1
