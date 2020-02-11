@@ -20,8 +20,7 @@
     "test:endtoend": "node test --scope=endtoend"
   },
   "devDependencies": {
-    "@absolunet/manager": "2.0.0",
-    "@absolunet/tester": "3.0.5",
-    "lerna": "3.18.3"
+    "@absolunet/manager": "2.1.0",
+    "@absolunet/tester": "3.2.1"
   }
 }
