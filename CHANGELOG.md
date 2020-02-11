@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Changed
+- Update to stylelint 13.1.0
+- Update to stylelint-declaration-strict-value 1.1.8
+- Update to stylelint-order 4.0.0
+- Update to stylelint-scss 3.14.2
 - Update manager and tester
 - Convert tests to Given-When-Then
 - Maintenance updates
