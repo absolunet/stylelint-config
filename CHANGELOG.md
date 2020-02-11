@@ -10,12 +10,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased]
+### Changed
+- Update manager and tester
+- Convert tests to Given-When-Then
+- Maintenance updates
 
 
 
 ## [1.3.0] - 2019-11-04
 ### Changed
-- META: Migration to @absolunet/manager 2 and @absolunet/tester 3
+- Migration to @absolunet/manager 2 and @absolunet/tester 3
 - Update to stylelint-order 3.1.1
 - Update to stylelint-declaration-strict-value 1.1.6
 
