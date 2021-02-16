@@ -10,6 +10,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased]
+### Changed
+- Support Node.js 10+
+- Migration to @absolunet/tester 4
+- Maintenance updates
+
+### Removed
+- Remove distribution from git repository
 
 
 

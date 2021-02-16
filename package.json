@@ -1,6 +1,9 @@
 {
   "name": "stylelint-config",
   "private": true,
+  "engines": {
+    "node": ">= 10"
+  },
   "scripts": {
     "postinstall": "npm run manager:install",
     "manager:install": "node manager --task=install",
@@ -20,7 +23,8 @@
     "test:endtoend": "node test --scope=endtoend"
   },
   "devDependencies": {
+    "@absolunet/fss": "1.6.2",
     "@absolunet/manager": "2.1.0",
-    "@absolunet/tester": "3.2.1"
+    "@absolunet/tester": "4.1.4"
   }
 }

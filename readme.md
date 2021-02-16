@@ -1,5 +1,5 @@
 # stylelint config
-[![Travis CI](https://api.travis-ci.org/absolunet/stylelint-config.svg?branch=master)](https://travis-ci.org/absolunet/stylelint-config/builds)
+[![tests](https://github.com/absolunet/stylelint-config/workflows/tests/badge.svg?branch=master)](https://github.com/absolunet/stylelint-config/actions?query=workflow%3Atests+branch%3Amaster)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 
 Opinionated stylelint [extendable config](https://stylelint.io/user-guide/configuration/#extends).

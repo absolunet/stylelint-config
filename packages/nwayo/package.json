@@ -23,7 +23,7 @@
     "url": "https://github.com/absolunet/stylelint-config/issues"
   },
   "engines": {
-    "node": ">= 12"
+    "node": ">= 10"
   },
   "main": "dist/node",
   "scripts": {
@@ -35,11 +35,11 @@
     "test:endtoend": "node test --scope=endtoend"
   },
   "devDependencies": {
-    "@absolunet/tester": "3.2.1"
+    "@absolunet/tester": "4.1.4"
   },
   "dependencies": {
     "@absolunet/stylelint-loader": "^1.1.0",
-    "pkg-dir": "^4.2.0",
+    "pkg-dir": "^5.0.0",
     "stylelint": "13.1.0",
     "stylelint-declaration-strict-value": "1.1.8",
     "stylelint-order": "4.0.0",
