@@ -55,6 +55,7 @@ rules:
 
 
   # Declaration block
+  declaration-block-no-duplicate-custom-properties:  true
   declaration-block-no-duplicate-properties:         true
   declaration-block-no-shorthand-property-overrides: true
 
@@ -78,7 +79,7 @@ rules:
 
 
   # Comment
-  comment-no-empty: true
+  comment-no-empty: null  # via scss/comment-no-empty
 
 
   # General / Sheet
@@ -96,9 +97,18 @@ rules:
 
   #-- Limit language features
 
+  # Alpha-value
+  alpha-value-notation: number
+
+
+  # Hue
+  hue-degree-notation: angle
+
+
   # Color
-  color-named:  null  # via stylelint-declaration-strict-value
-  color-no-hex: null  # via stylelint-declaration-strict-value
+  color-function-notation: modern
+  color-named:             null  # via stylelint-declaration-strict-value
+  color-no-hex:            null  # via stylelint-declaration-strict-value
 
 
   # Function
@@ -172,6 +182,7 @@ rules:
 
 
   # Selector
+  selector-attribute-name-disallowed-list:     null
   selector-attribute-operator-allowed-list:    null
   selector-attribute-operator-disallowed-list: null
 
@@ -228,6 +239,7 @@ rules:
 
 
   # Comment
+  comment-pattern: null
   comment-word-disallowed-list:
     - /todo/i
     - severity: warning
@@ -446,28 +458,15 @@ rules:
       - font-size
       - font-weight
 
-    - ignoreKeywords:
+    - ignoreValues:
+        '':
+          - currentColor
+          - inherit
+          - transparent
+
         z-index:
           - '-1'
           - auto
-          - inherit
-
-        /-radius/:
-          - inherit
-
-        /color/:
-          - transparent
-          - currentColor
-          - inherit
-
-        font-family:
-          - inherit
-
-        font-size:
-          - inherit
-
-        font-weight:
-          - inherit
 
 
 
@@ -524,7 +523,12 @@ rules:
   scss/dollar-variable-colon-space-after:        at-least-one-space
   scss/dollar-variable-colon-space-before:       never
   scss/dollar-variable-default:                  null
+  scss/dollar-variable-empty-line-after:
+    - always
+    - except: [last-nested, before-dollar-variable]
+
   scss/dollar-variable-empty-line-before:        null
+  scss/dollar-variable-first-in-block:           null  # via order/order
   scss/dollar-variable-no-missing-interpolation: true
   scss/dollar-variable-pattern:
     - ^([a-z][a-z0-9]*)(-[a-z0-9]+)*$
@@ -534,6 +538,7 @@ rules:
   scss/percent-placeholder-pattern: null  # via at-rule-disallowed-list
 
   # Comment
+  scss/comment-no-empty: true
   scss/comment-no-loud: null
 
   # //-comment
@@ -573,11 +578,12 @@ rules:
   scss/selector-no-union-class-name:           true
 
   # General / Sheet
-  scss/no-dollar-variables: null
+  scss/no-dollar-variables:      null
   scss/no-duplicate-dollar-variables:
     - true
     - ignoreInside: at-rule
-  scss/no-duplicate-mixins: true
+  scss/no-duplicate-mixins:      true
+  scss/no-global-function-names: true
 
 
 
@@ -606,20 +612,25 @@ rules:
       # Current &,
       - type:     rule
         selector: ^&,
+        name:     Parent selector
 
       # &::pseudo-elements
       - type:     rule
         selector: ^&::[\w-]+,?
+        name:     Parent pseudo-elements
 
       # &:pseudo-classes
       - type:     rule
         selector: ^&:[\w-]+,?
+        name:     Parent pseudo-classes
       - type:     rule
         selector: ^#{\$nwayo-hover-selector}$
+        name:     Parent pseudo-classes
 
       # Parent selection &
       - type:     rule
         selector: '&$'
+        name:     Parent usage
 
       # Nested
       - rules

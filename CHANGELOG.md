@@ -16,6 +16,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Maintenance updates
 
 #### Update to stylelint 13.10.0
+- Added `declaration-block-no-duplicate-custom-properties`
+- Added `alpha-value-notation`
+- Added `hue-degree-notation`
+- Added `color-function-notation`
+- Ignored `selector-attribute-name-disallowed-list`
+- Ignored `comment-pattern`
 - Renamed `at-rule-blacklist` to `at-rule-disallowed-list`
 - Renamed `at-rule-property-requirelist` to `at-rule-property-required-list`
 - Renamed `at-rule-whitelist` to `at-rule-allowed-list`
@@ -43,6 +49,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Renamed `selector-pseudo-element-whitelist` to `selector-pseudo-element-allowed-list`
 - Renamed `unit-blacklist` to `unit-disallowed-list`
 - Renamed `unit-whitelist` to `unit-allowed-list`
+
+#### Update to stylelint-declaration-strict-value 1.7.7
+- Simplified `scale-unlimited/declaration-strict-value` implementation
+
+#### Update to stylelint-order 4.1.0
+- Added verbose names to `order/order` rule
+
+#### Update to stylelint-scss 3.19.0
+- Added `scss/dollar-variable-empty-line-after`
+- Added `scss/no-global-function-names`
+- Added `scss/comment-no-empty` replacing `comment-no-empty`
+- Ignored `scss/dollar-variable-first-in-block` (covered by `order/order`)
 
 ### Removed
 - Remove distribution from git repository
