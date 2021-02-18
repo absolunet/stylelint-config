@@ -60,6 +60,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added `scss/dollar-variable-empty-line-after`
 - Added `scss/no-global-function-names`
 - Added `scss/comment-no-empty` replacing `comment-no-empty`
+- Changed `scss/at-function-pattern` to allow private prefix `-`
+- Changed `scss/at-mixin-pattern` to remove mandatory suffix
 - Ignored `scss/dollar-variable-first-in-block` (covered by `order/order`)
 
 ### Removed

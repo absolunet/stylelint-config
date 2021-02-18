@@ -490,7 +490,7 @@ rules:
   scss/at-function-named-arguments:          null
   scss/at-function-parentheses-space-before: never
   scss/at-function-pattern:
-    - ^([a-z][a-z0-9]*)(-[a-z0-9]+)*$
+    - ^-?([a-z][a-z0-9]*)(-[a-z0-9]+)*$
     - message: Function name must be kebab-case (scss/at-function-pattern)
 
   # @-if
@@ -511,8 +511,8 @@ rules:
   scss/at-mixin-named-arguments:               null
   scss/at-mixin-parentheses-space-before:      never
   scss/at-mixin-pattern:
-    - ^([a-z][a-z0-9]*)(-[a-z0-9]+)*(-styles|-image)$
-    - message: Mixin name must be kebab-case and suffixed with -styles | -image (scss/at-mixin-pattern)
+    - ^([a-z][a-z0-9]*)(-[a-z0-9]+)*$
+    - message: Mixin name must be kebab-case (scss/at-mixin-pattern)
 
   # @-rule
   scss/at-rule-conditional-no-parentheses: true
