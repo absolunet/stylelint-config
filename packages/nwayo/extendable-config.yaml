@@ -43,7 +43,7 @@ rules:
 
 
   # Unit
-  unit-no-unknown: null  # via unit-whitelist
+  unit-no-unknown: null  # via unit-allowed-list
 
 
   # Property
@@ -55,6 +55,7 @@ rules:
 
 
   # Declaration block
+  declaration-block-no-duplicate-custom-properties:  true
   declaration-block-no-duplicate-properties:         true
   declaration-block-no-shorthand-property-overrides: true
 
@@ -78,7 +79,7 @@ rules:
 
 
   # Comment
-  comment-no-empty: true
+  comment-no-empty: null  # via scss/comment-no-empty
 
 
   # General / Sheet
@@ -96,17 +97,26 @@ rules:
 
   #-- Limit language features
 
+  # Alpha-value
+  alpha-value-notation: number
+
+
+  # Hue
+  hue-degree-notation: angle
+
+
   # Color
-  color-named:  null  # via stylelint-declaration-strict-value
-  color-no-hex: null  # via stylelint-declaration-strict-value
+  color-function-notation: modern
+  color-named:             null  # via stylelint-declaration-strict-value
+  color-no-hex:            null  # via stylelint-declaration-strict-value
 
 
   # Function
-  function-blacklist:              null
-  function-url-no-scheme-relative: true
-  function-url-scheme-blacklist:   null
-  function-url-scheme-whitelist:   null
-  function-whitelist:              null
+  function-allowed-list:               null
+  function-disallowed-list:            null
+  function-url-no-scheme-relative:     true
+  function-url-scheme-allowed-list:    null
+  function-url-scheme-disallowed-list: null
 
 
   # Number
@@ -122,8 +132,7 @@ rules:
 
 
   # Unit
-  unit-blacklist: null  # via unit-whitelist
-  unit-whitelist:
+  unit-allowed-list:
     - em
     - '%'
     - vw
@@ -131,6 +140,9 @@ rules:
     - ms
     - s
     - deg
+
+  unit-disallowed-list: null  # via unit-allowed-list
+
 
   # Shorthand property
   shorthand-property-no-redundant-values: true
@@ -145,24 +157,24 @@ rules:
 
 
   # Property
-  property-blacklist:
+  property-allowed-list:     null   # via property-disallowed-list
+  property-disallowed-list:
     - font-smoothing
 
   property-no-vendor-prefix: true
-  property-whitelist:        null   # via property-blacklist
 
 
   # Declaration
   declaration-block-no-redundant-longhand-properties: true
   declaration-no-important:                           null
-  declaration-property-unit-blacklist:                null  # via unit-whitelist
-  declaration-property-unit-whitelist:                null  # via unit-whitelist
-  declaration-property-value-blacklist:
+  declaration-property-unit-allowed-list:             null  # via unit-allowed-list
+  declaration-property-unit-disallowed-list:          null  # via unit-allowed-list
+  declaration-property-value-allowed-list:            null  # via declaration-property-value-disallowed-list
+  declaration-property-value-disallowed-list:
     - /^border/:     /none|rem-calc/
       /^transition/: /all/
       /.*/:          /rem-calc/
 
-  declaration-property-value-whitelist:               null  # via declaration-property-value-blacklist
 
 
   # Declaration block
@@ -170,45 +182,50 @@ rules:
 
 
   # Selector
-  selector-attribute-operator-blacklist: null
-  selector-attribute-operator-whitelist: null
+  selector-attribute-name-disallowed-list:
+    - class
+    - id
+    - /^data-/
+
+  selector-attribute-operator-allowed-list:    null
+  selector-attribute-operator-disallowed-list: null
 
   selector-class-pattern:
     - ^([a-z][a-z0-9]*)(-[a-z0-9]+)*$
     - resolveNestedSelectors: true
       message:                Class selector must be kebab-case (selector-class-pattern)
 
-  selector-combinator-blacklist:         null
-  selector-combinator-whitelist:         null
+  selector-combinator-allowed-list:            null
+  selector-combinator-disallowed-list:         null
 
   selector-id-pattern:
     - /\s\S/
     - message: Unexpected id selector (selector-id-pattern)
 
-  selector-max-attribute:                null
-  selector-max-class:                    null
-  selector-max-combinators:              null
-  selector-max-compound-selectors:       null
-  selector-max-empty-lines:              0
-  selector-max-id:                       null
-  selector-max-pseudo-class:             null
-  selector-max-specificity:              null
-  selector-max-type:                     null
-  selector-max-universal:                0
-  selector-nested-pattern:               null
-  selector-no-qualifying-type:           null
-  selector-no-vendor-prefix:             true
-  selector-pseudo-class-blacklist:       null
-  selector-pseudo-class-whitelist:       null
-  selector-pseudo-element-blacklist:     null
-  selector-pseudo-element-whitelist:     null
+  selector-max-attribute:                      null
+  selector-max-class:                          null
+  selector-max-combinators:                    null
+  selector-max-compound-selectors:             null
+  selector-max-empty-lines:                    0
+  selector-max-id:                             null
+  selector-max-pseudo-class:                   null
+  selector-max-specificity:                    null
+  selector-max-type:                           null
+  selector-max-universal:                      0
+  selector-nested-pattern:                     null
+  selector-no-qualifying-type:                 null
+  selector-no-vendor-prefix:                   true
+  selector-pseudo-class-allowed-list:          null
+  selector-pseudo-class-disallowed-list:       null
+  selector-pseudo-element-allowed-list:        null
+  selector-pseudo-element-disallowed-list:     null
 
 
   # Media feature
-  media-feature-name-blacklist:        null
-  media-feature-name-no-vendor-prefix: true
-  media-feature-name-value-whitelist:  null
-  media-feature-name-whitelist:        null
+  media-feature-name-allowed-list:       null
+  media-feature-name-disallowed-list:    null
+  media-feature-name-no-vendor-prefix:   true
+  media-feature-name-value-allowed-list: null
 
 
   # Custom media
@@ -216,17 +233,18 @@ rules:
 
 
   # At-rule
-  at-rule-blacklist:
+  at-rule-allowed-list:           null  # via at-rule-disallowed-list
+  at-rule-disallowed-list:
     - extend
-    - message: Unexpected @extend directive (at-rule-blacklist)
+    - message: Unexpected @extend directive (at-rule-disallowed-list)
 
-  at-rule-no-vendor-prefix:     true
-  at-rule-property-requirelist: null
-  at-rule-whitelist:            null  # via at-rule-blacklist
+  at-rule-no-vendor-prefix:       true
+  at-rule-property-required-list: null
 
 
   # Comment
-  comment-word-blacklist:
+  comment-pattern: null
+  comment-word-disallowed-list:
     - /todo/i
     - severity: warning
       message:  Don't forget this TODO
@@ -444,28 +462,15 @@ rules:
       - font-size
       - font-weight
 
-    - ignoreKeywords:
+    - ignoreValues:
+        '':
+          - currentColor
+          - inherit
+          - transparent
+
         z-index:
           - '-1'
           - auto
-          - inherit
-
-        /-radius/:
-          - inherit
-
-        /color/:
-          - transparent
-          - currentColor
-          - inherit
-
-        font-family:
-          - inherit
-
-        font-size:
-          - inherit
-
-        font-weight:
-          - inherit
 
 
 
@@ -483,13 +488,13 @@ rules:
   scss/at-else-if-parentheses-space-before: always
 
   # @-extend
-  scss/at-extend-no-missing-placeholder: null  # via at-rule-blacklist
+  scss/at-extend-no-missing-placeholder: null  # via at-rule-disallowed-list
 
   # @-function
   scss/at-function-named-arguments:          null
   scss/at-function-parentheses-space-before: never
   scss/at-function-pattern:
-    - ^([a-z][a-z0-9]*)(-[a-z0-9]+)*$
+    - ^-?([a-z][a-z0-9]*)(-[a-z0-9]+)*$
     - message: Function name must be kebab-case (scss/at-function-pattern)
 
   # @-if
@@ -500,7 +505,7 @@ rules:
   # @-import
   scss/at-import-no-partial-leading-underscore: true
   scss/at-import-partial-extension:             never
-  scss/at-import-partial-extension-blacklist:   null  # via scss/at-import-partial-extension-whitelist
+  scss/at-import-partial-extension-blacklist:   null  # via scss/at-import-partial-extension-allowed-list
   scss/at-import-partial-extension-whitelist:         # TODO: Revise css vs scss fallback width Dart
     - scss
     - css
@@ -510,8 +515,8 @@ rules:
   scss/at-mixin-named-arguments:               null
   scss/at-mixin-parentheses-space-before:      never
   scss/at-mixin-pattern:
-    - ^([a-z][a-z0-9]*)(-[a-z0-9]+)*(-styles|-image)$
-    - message: Mixin name must be kebab-case and suffixed with -styles | -image (scss/at-mixin-pattern)
+    - ^([a-z][a-z0-9]*)(-[a-z0-9]+)*$
+    - message: Mixin name must be kebab-case (scss/at-mixin-pattern)
 
   # @-rule
   scss/at-rule-conditional-no-parentheses: true
@@ -522,16 +527,22 @@ rules:
   scss/dollar-variable-colon-space-after:        at-least-one-space
   scss/dollar-variable-colon-space-before:       never
   scss/dollar-variable-default:                  null
+  scss/dollar-variable-empty-line-after:
+    - always
+    - except: [last-nested, before-dollar-variable]
+
   scss/dollar-variable-empty-line-before:        null
+  scss/dollar-variable-first-in-block:           null  # via order/order
   scss/dollar-variable-no-missing-interpolation: true
   scss/dollar-variable-pattern:
     - ^([a-z][a-z0-9]*)(-[a-z0-9]+)*$
     - message: Variable name must be kebab-case (scss/dollar-variable-pattern)
 
   # %-placeholder
-  scss/percent-placeholder-pattern: null  # via at-rule-blacklist
+  scss/percent-placeholder-pattern: null  # via at-rule-disallowed-list
 
   # Comment
+  scss/comment-no-empty: true
   scss/comment-no-loud: null
 
   # //-comment
@@ -571,11 +582,12 @@ rules:
   scss/selector-no-union-class-name:           true
 
   # General / Sheet
-  scss/no-dollar-variables: null
+  scss/no-dollar-variables:      null
   scss/no-duplicate-dollar-variables:
     - true
     - ignoreInside: at-rule
-  scss/no-duplicate-mixins: true
+  scss/no-duplicate-mixins:      true
+  scss/no-global-function-names: true
 
 
 
@@ -604,20 +616,25 @@ rules:
       # Current &,
       - type:     rule
         selector: ^&,
+        name:     Parent selector
 
       # &::pseudo-elements
       - type:     rule
         selector: ^&::[\w-]+,?
+        name:     Parent pseudo-elements
 
       # &:pseudo-classes
       - type:     rule
         selector: ^&:[\w-]+,?
+        name:     Parent pseudo-classes
       - type:     rule
         selector: ^#{\$nwayo-hover-selector}$
+        name:     Parent pseudo-classes
 
       # Parent selection &
       - type:     rule
         selector: '&$'
+        name:     Parent usage
 
       # Nested
       - rules

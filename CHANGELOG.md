@@ -15,6 +15,55 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Migration to @absolunet/tester 4
 - Maintenance updates
 
+#### Update to stylelint 13.11.0
+- Added `declaration-block-no-duplicate-custom-properties`
+- Added `alpha-value-notation`
+- Added `hue-degree-notation`
+- Added `color-function-notation`
+- Added `selector-attribute-name-disallowed-list`
+- Ignored `comment-pattern`
+- Renamed `at-rule-blacklist` to `at-rule-disallowed-list`
+- Renamed `at-rule-property-requirelist` to `at-rule-property-required-list`
+- Renamed `at-rule-whitelist` to `at-rule-allowed-list`
+- Renamed `comment-word-blacklist` to `comment-word-disallowed-list`
+- Renamed `declaration-property-unit-blacklist` to `declaration-property-unit-disallowed-list`
+- Renamed `declaration-property-unit-whitelist` to `declaration-property-unit-allowed-list`
+- Renamed `declaration-property-value-blacklist` to `declaration-property-value-disallowed-list`
+- Renamed `declaration-property-value-whitelist` to `declaration-property-value-allowed-list`
+- Renamed `function-blacklist` to `function-disallowed-list`
+- Renamed `function-url-scheme-blacklist` to `function-url-scheme-disallowed-list`
+- Renamed `function-url-scheme-whitelist` to `function-url-scheme-allowed-list`
+- Renamed `function-whitelist` to `function-allowed-list`
+- Renamed `media-feature-name-blacklist` to `media-feature-name-disallowed-list`
+- Renamed `media-feature-name-value-whitelist` to `media-feature-name-value-allowed-list`
+- Renamed `media-feature-name-whitelist` to `media-feature-name-allowed-list`
+- Renamed `property-blacklist` to `property-disallowed-list`
+- Renamed `property-whitelist` to `property-allowed-list`
+- Renamed `selector-attribute-operator-blacklist` to `selector-attribute-operator-disallowed-list`
+- Renamed `selector-attribute-operator-whitelist` to `selector-attribute-operator-allowed-list`
+- Renamed `selector-combinator-blacklist` to `selector-combinator-disallowed-list`
+- Renamed `selector-combinator-whitelist` to `selector-combinator-allowed-list`
+- Renamed `selector-pseudo-class-blacklist` to `selector-pseudo-class-disallowed-list`
+- Renamed `selector-pseudo-class-whitelist` to `selector-pseudo-class-allowed-list`
+- Renamed `selector-pseudo-element-blacklist` to `selector-pseudo-element-disallowed-list`
+- Renamed `selector-pseudo-element-whitelist` to `selector-pseudo-element-allowed-list`
+- Renamed `unit-blacklist` to `unit-disallowed-list`
+- Renamed `unit-whitelist` to `unit-allowed-list`
+
+#### Update to stylelint-declaration-strict-value 1.7.7
+- Simplified `scale-unlimited/declaration-strict-value` implementation
+
+#### Update to stylelint-order 4.1.0
+- Added verbose names to `order/order` rule
+
+#### Update to stylelint-scss 3.19.0
+- Added `scss/dollar-variable-empty-line-after`
+- Added `scss/no-global-function-names`
+- Added `scss/comment-no-empty` replacing `comment-no-empty`
+- Changed `scss/at-function-pattern` to allow private prefix `-`
+- Changed `scss/at-mixin-pattern` to remove mandatory suffix
+- Ignored `scss/dollar-variable-first-in-block` (covered by `order/order`)
+
 ### Removed
 - Remove distribution from git repository
 
