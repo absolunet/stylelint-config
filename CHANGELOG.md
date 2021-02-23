@@ -15,12 +15,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Migration to @absolunet/tester 4
 - Maintenance updates
 
-#### Update to stylelint 13.10.0
+#### Update to stylelint 13.11.0
 - Added `declaration-block-no-duplicate-custom-properties`
 - Added `alpha-value-notation`
 - Added `hue-degree-notation`
 - Added `color-function-notation`
-- Ignored `selector-attribute-name-disallowed-list`
+- Added `selector-attribute-name-disallowed-list`
 - Ignored `comment-pattern`
 - Renamed `at-rule-blacklist` to `at-rule-disallowed-list`
 - Renamed `at-rule-property-requirelist` to `at-rule-property-required-list`

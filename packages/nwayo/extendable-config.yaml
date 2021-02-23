@@ -182,7 +182,11 @@ rules:
 
 
   # Selector
-  selector-attribute-name-disallowed-list:     null
+  selector-attribute-name-disallowed-list:
+    - class
+    - id
+    - /^data-/
+
   selector-attribute-operator-allowed-list:    null
   selector-attribute-operator-disallowed-list: null
 
