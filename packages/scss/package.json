@@ -1,11 +1,11 @@
 {
-  "name": "@absolunet/stylelint-config-nwayo",
+  "name": "@absolunet/stylelint-config-scss",
   "version": "1.3.1",
-  "description": "stylelint config - nwayo",
+  "description": "stylelint config for SCSS",
   "definition": "",
   "homepage": "https://github.com/absolunet/stylelint-config",
   "keywords": [
-    "nwayo",
+    "scss",
     "stylelint",
     "stylelintconfig",
     "stylelint-config"
@@ -38,11 +38,9 @@
     "@absolunet/tester": "4.1.4"
   },
   "dependencies": {
+    "@absolunet/stylelint-config-core": "1.3.1",
     "@absolunet/stylelint-loader": "^1.1.0",
     "pkg-dir": "^5.0.0",
-    "stylelint": "13.11.0",
-    "stylelint-declaration-strict-value": "1.7.7",
-    "stylelint-order": "4.1.0",
     "stylelint-scss": "3.19.0"
   }
 }

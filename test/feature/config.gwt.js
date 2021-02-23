@@ -8,7 +8,7 @@ const given = { ...gwt.given };
 const when  = { ...gwt.when };
 const then  = { ...gwt.then };
 
-const stylelint = require(require.resolve('stylelint', { paths: [path.join(__dirname, '..', '..', 'packages', 'nwayo')] }));
+const stylelint = require(require.resolve('stylelint', { paths: [path.join(__dirname, '..', '..', 'packages', 'core')] }));
 
 let root;
 let config;
