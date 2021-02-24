@@ -1,6 +1,7 @@
 # stylelint config
-[![tests](https://github.com/absolunet/stylelint-config/workflows/tests/badge.svg?branch=master)](https://github.com/absolunet/stylelint-config/actions?query=workflow%3Atests+branch%3Amaster)
-[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
+[![Tests][tests-badge]][tests-url]
+[![Lerna][lerna-badge]][lerna-badge]
+[![License: MIT][license-badge]][license-url]
 
 > Opinionated stylelint [extendable config](https://stylelint.io/user-guide/configuration/#extends).
 
@@ -65,5 +66,36 @@ extends: '@absolunet/stylelint-config-[RULESET]'
 - [@absolunet/stylelint-loader](https://github.com/absolunet/node-stylelint-loader) - stylelint extendable config YAML loader.
 
 
+## Documentation
+
+See the [full documentation](https://documentation.absolunet.com/stylelint-config/core) for an in-depth look.
+
+See the [Changelog](CHANGELOG.md) to see what has changed.
+
+
+## Contribute
+
+See the [Contributing Guidelines](CONTRIBUTING.md) for ways to get started.
+
+See the [Support Guide](SUPPORT.md) for ways to get help.
+
+See the [Security Policy](SECURITY.md) for sharing vulnerability reports.
+
+This project has a [Code of Conduct](CODE_OF_CONDUCT.md).
+By interacting with this repository, organization, or community you agree to abide by its terms.
+
+
 ## License
-MIT © [Absolunet](https://absolunet.com)
+
+[MIT](LICENSE) © [Absolunet](https://absolunet.com)
+
+
+
+
+[tests-badge]:   https://img.shields.io/github/workflow/status/absolunet/stylelint-config/tests/master?label=tests&style=flat-square
+[lerna-badge]:   https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg?style=flat-square
+[license-badge]: https://img.shields.io/badge/license-MIT-green?style=flat-square
+
+[tests-url]:   https://github.com/absolunet/stylelint-config/actions?query=workflow%3Atests+branch%3Amaster
+[lerna-url]:   https://lernajs.io/
+[license-url]: https://opensource.org/licenses/MIT
