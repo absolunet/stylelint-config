@@ -10,6 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased]
+### Added
+- Creation of `@absolunet/stylelint-config-core` - Core rules
+- Creation of `@absolunet/stylelint-config-scss` - SCSS rules
+- Creation of `@absolunet/stylelint-config-salesforce` - Salesforce rules
+
 ### Changed
 - Support Node.js 10+
 - Migration to @absolunet/tester 4
@@ -65,6 +70,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Ignored `scss/dollar-variable-first-in-block` (covered by `order/order`)
 
 ### Removed
+- Remove `@absolunet/stylelint-config-nwayo` package (Replaced by `@absolunet/stylelint-config-scss`)
 - Remove distribution from git repository
 
 

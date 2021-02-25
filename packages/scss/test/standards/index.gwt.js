@@ -1,5 +1,5 @@
 //--------------------------------------------------------
-//-- nwayo - Given-When-Then
+//-- SCSS - Given-When-Then
 //--------------------------------------------------------
 import path     from 'path';
 import * as gwt from '../../../../test/standards/package.gwt';

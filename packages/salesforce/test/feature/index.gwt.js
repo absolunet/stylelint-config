@@ -1,5 +1,5 @@
 //--------------------------------------------------------
-//-- nwayo - Given-When-Then
+//-- Salesforce - Given-When-Then
 //--------------------------------------------------------
 import path     from 'path';
 import * as gwt from '../../../../test/feature/config.gwt';
