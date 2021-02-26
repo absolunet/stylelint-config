@@ -1,6 +1,6 @@
 {
   "name": "@absolunet/stylelint-config-core",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "stylelint config - Core rules",
   "definition": "",
   "homepage": "https://github.com/absolunet/stylelint-config",

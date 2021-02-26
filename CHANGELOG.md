@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased]
+
+
+
+## [2.0.1] - 2021-02-26
 ### Removed
 - Remove `scss/comment-no-empty` because it breaks commenting blocks of code
 
@@ -239,7 +243,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-[Unreleased]: https://github.com/absolunet/stylelint-config/compare/2.0.0...HEAD
+[Unreleased]: https://github.com/absolunet/stylelint-config/compare/2.0.1...HEAD
+[2.0.1]:      https://github.com/absolunet/stylelint-config/compare/2.0.0...2.0.1
 [2.0.0]:      https://github.com/absolunet/stylelint-config/compare/1.3.1...2.0.0
 [1.3.1]:      https://github.com/absolunet/stylelint-config/compare/1.3.0...1.3.1
 [1.3.0]:      https://github.com/absolunet/stylelint-config/compare/1.2.1...1.3.0
