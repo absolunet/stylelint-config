@@ -97,5 +97,5 @@ By interacting with this repository, organization, or community you agree to abi
 [license-badge]: https://img.shields.io/badge/license-MIT-green?style=flat-square
 
 [tests-url]:   https://github.com/absolunet/stylelint-config/actions?query=workflow%3Atests+branch%3Amaster
-[lerna-url]:   https://lernajs.io/
+[lerna-url]:   https://lerna.js.org/
 [license-url]: https://opensource.org/licenses/MIT
