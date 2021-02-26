@@ -1,6 +1,6 @@
 # stylelint config
 [![Tests][tests-badge]][tests-url]
-[![Lerna][lerna-badge]][lerna-badge]
+[![Lerna][lerna-badge]][lerna-url]
 [![License: MIT][license-badge]][license-url]
 
 > Opinionated stylelint [extendable config](https://stylelint.io/user-guide/configuration/#extends).

@@ -15,9 +15,6 @@ rules:
   # At-rule
   at-rule-no-unknown: null  # via scss/at-rule-no-unknown
 
-  # Comment
-  comment-no-empty: null  # via scss/comment-no-empty
-
 
 
   #-- Limit language features
@@ -166,8 +163,8 @@ rules:
   scss/percent-placeholder-pattern: null  # via at-rule-disallowed-list
 
   # Comment
-  scss/comment-no-empty: true
-  scss/comment-no-loud: null
+  scss/comment-no-empty: null
+  scss/comment-no-loud:  null
 
   # //-comment
   scss/double-slash-comment-empty-line-before: null
