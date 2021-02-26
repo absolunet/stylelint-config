@@ -154,10 +154,7 @@ rules:
   scss/dollar-variable-colon-space-after:        at-least-one-space
   scss/dollar-variable-colon-space-before:       never
   scss/dollar-variable-default:                  null
-  scss/dollar-variable-empty-line-after:
-    - always
-    - except: [last-nested, before-dollar-variable]
-
+  scss/dollar-variable-empty-line-after:         null
   scss/dollar-variable-empty-line-before:        null
   scss/dollar-variable-first-in-block:           null  # via order/order
   scss/dollar-variable-no-missing-interpolation: true

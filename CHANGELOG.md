@@ -55,18 +55,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Renamed `unit-blacklist` to `unit-disallowed-list`
 - Renamed `unit-whitelist` to `unit-allowed-list`
 
-#### Update to stylelint-declaration-strict-value 1.7.7
+#### Update to stylelint-declaration-strict-value 1.7.9
 - Simplified `scale-unlimited/declaration-strict-value` implementation
 
 #### Update to stylelint-order 4.1.0
 - Added verbose names to `order/order` rule
 
 #### Update to stylelint-scss 3.19.0
-- Added `scss/dollar-variable-empty-line-after`
 - Added `scss/no-global-function-names`
 - Added `scss/comment-no-empty` replacing `comment-no-empty`
 - Changed `scss/at-function-pattern` to allow private prefix `-`
 - Changed `scss/at-mixin-pattern` to remove mandatory suffix
+- Ignored `scss/dollar-variable-empty-line-after`
 - Ignored `scss/dollar-variable-first-in-block` (covered by `order/order`)
 
 ### Removed

@@ -40,7 +40,7 @@
     "@absolunet/stylelint-loader": "^1.1.0",
     "pkg-dir": "^5.0.0",
     "stylelint": "13.11.0",
-    "stylelint-declaration-strict-value": "1.7.7",
+    "stylelint-declaration-strict-value": "1.7.9",
     "stylelint-order": "4.1.0"
   }
 }
