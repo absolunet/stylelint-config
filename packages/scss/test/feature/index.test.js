@@ -6,4 +6,9 @@ import { given, when, then } from "./index.gwt";
 
 describe(`Validate that 'scss' works`, () => {
 	configTests({ given, when, then });
+
+	test(`Ensure config can be used with SCSS`, async () => {
+		await when.configIsUsedWithSCSS();
+		then.resultsShouldContainNoError();
+	});
 });

@@ -12,11 +12,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Recover `@absolunet/stylelint-loader` in this repository
+- Manage SCSS syntax manually
 
 ### Changed
 - Drop support for Node.js 10
 - Change plugins to peer dependencies
+- Change `color-function-notation` to `legacy` for `scss` 
 - Manager and tester updates
+- Maintenance updates
+
+#### Update to stylelint 14.0.1
+- Add `named-grid-areas-no-invalid`
+- Add `custom-property-no-missing-var-function`
+- Add `no-invalid-position-at-import-rule`
+- Add `color-hex-alpha`
+- Add `no-irregular-whitespace` 
+- Ignore `selector-disallowed-list`
+- Remove `function-calc-no-invalid`
 
 
 

@@ -43,7 +43,26 @@ when.configIsLoaded = () => {
 
 when.configIsUsed = async () => {
 	when.configIsLoaded();
-	results = await stylelint.lint({ config, configBasedir: root, code: "a {\n\t/* test */\n}\n" });
+
+	const code = `/* -- */
+a {
+	/* test */
+}
+`;
+	results = await stylelint.lint({ config, configBasedir: root, code });
+};
+
+when.configIsUsedWithSCSS = async () => {
+	when.configIsLoaded();
+
+	const code = `/* -- */
+// test
+
+a {
+	/* test */
+}
+`;
+	results = await stylelint.lint({ config, configBasedir: root, code });
 };
 
 //-- Then - Config
