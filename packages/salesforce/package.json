@@ -39,6 +39,6 @@
   },
   "dependencies": {
     "@absolunet/stylelint-config-scss": "2.0.1",
-    "@absolunet/stylelint-loader": "^2.0.1"
+    "@absolunet/stylelint-loader": "2.0.1"
   }
 }

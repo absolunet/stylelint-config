@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Drop support for Node.js 10
+- Change plugins to peer dependencies
 - Manager and tester updates
 
 
