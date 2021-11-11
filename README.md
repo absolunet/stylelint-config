@@ -1,7 +1,6 @@
 # stylelint config
 [![Tests][tests-badge]][tests-url]
 [![Lerna][lerna-badge]][lerna-url]
-[![License: MIT][license-badge]][license-url]
 
 > Opinionated stylelint [extendable config](https://stylelint.io/user-guide/configuration/#extends).
 
@@ -92,10 +91,8 @@ By interacting with this repository, organization, or community you agree to abi
 
 
 
-[tests-badge]:   https://img.shields.io/github/workflow/status/absolunet/stylelint-config/tests/master?label=tests&style=flat-square
-[lerna-badge]:   https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg?style=flat-square
-[license-badge]: https://img.shields.io/badge/license-MIT-green?style=flat-square
+[tests-badge]: https://github.com/absolunet/stylelint-config/workflows/tests/badge.svg?branch=production
+[lerna-badge]: https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg
 
-[tests-url]:   https://github.com/absolunet/stylelint-config/actions?query=workflow%3Atests+branch%3Amaster
-[lerna-url]:   https://lernajs.io/
-[license-url]: https://opensource.org/licenses/MIT
+[tests-url]: https://github.com/absolunet/stylelint-config/actions?query=workflow%3Atests+branch%3Aproduction
+[lerna-url]: https://lerna.js.org/

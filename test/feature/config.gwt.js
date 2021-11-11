@@ -1,19 +1,20 @@
 //--------------------------------------------------------
 //-- Config - Given-When-Then
 //--------------------------------------------------------
-import path     from 'path';
-import * as gwt from '../base.gwt';
+import path from "path";
+import * as gwt from "../base.gwt";
 
 const given = { ...gwt.given };
-const when  = { ...gwt.when };
-const then  = { ...gwt.then };
+const when = { ...gwt.when };
+const then = { ...gwt.then };
 
-const stylelint = require(require.resolve('stylelint', { paths: [path.join(__dirname, '..', '..', 'packages', 'core')] }));
+const stylelint = require(require.resolve("stylelint", {
+	paths: [path.join(__dirname, "..", "..", "packages", "core")],
+}));
 
 let root;
 let config;
 let results;
-
 
 //-- Given - Reset
 given.noRoot = () => {
@@ -28,29 +29,41 @@ given.noResults = () => {
 	results = undefined;
 };
 
-
 //-- Given - Root
 given.root = (value) => {
 	root = value;
 };
 
-
-
-
 //-- When - Config
 when.configIsLoaded = () => {
 	when.attempting(() => {
-		config = require(root);  // eslint-disable-line node/global-require
+		config = require(root); // eslint-disable-line node/global-require
 	});
 };
 
 when.configIsUsed = async () => {
 	when.configIsLoaded();
-	results = await stylelint.lint({ config, configBasedir: root, code: 'a {\n\t/* test */\n}\n' });
+
+	const code = `/* -- */
+a {
+	/* test */
+}
+`;
+	results = await stylelint.lint({ config, configBasedir: root, code });
 };
 
+when.configIsUsedWithSCSS = async () => {
+	when.configIsLoaded();
 
+	const code = `/* -- */
+// test
 
+a {
+	/* test */
+}
+`;
+	results = await stylelint.lint({ config, configBasedir: root, code });
+};
 
 //-- Then - Config
 then.configShouldNotBeEmpty = () => {
@@ -59,10 +72,7 @@ then.configShouldNotBeEmpty = () => {
 };
 
 then.resultsShouldContainNoError = () => {
-	expect(results).toContainEntries([
-		['errored', false]
-	]);
+	expect(results).toContainEntries([["errored", false]]);
 };
-
 
 export { given, when, then };

@@ -1,6 +1,6 @@
 {
   "name": "@absolunet/stylelint-config-salesforce",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "stylelint config for Salesforce",
   "definition": "",
   "homepage": "https://github.com/absolunet/stylelint-config",
@@ -23,7 +23,7 @@
     "url": "https://github.com/absolunet/stylelint-config/issues"
   },
   "engines": {
-    "node": ">= 10"
+    "node": ">= 12.20.0"
   },
   "main": "dist/node",
   "scripts": {
@@ -35,11 +35,10 @@
     "test:endtoend": "node test --scope=endtoend"
   },
   "devDependencies": {
-    "@absolunet/tester": "4.2.0"
+    "@absolunet/tester": "5.0.0-beta.5"
   },
   "dependencies": {
-    "@absolunet/stylelint-config-scss": "2.0.1",
-    "@absolunet/stylelint-loader": "^1.1.0",
-    "pkg-dir": "^5.0.0"
+    "@absolunet/stylelint-config-scss": "3.0.0",
+    "@absolunet/stylelint-loader": "3.0.0"
   }
 }
