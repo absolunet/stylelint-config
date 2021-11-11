@@ -1,5 +1,7 @@
 extends: '@absolunet/stylelint-config-core'
 
+customSyntax: 'postcss-scss'
+
 plugins:
   - stylelint-scss
 
@@ -8,9 +10,6 @@ plugins:
 rules:
 
   #-- Possible errors
-
-  # Function
-  function-calc-no-invalid: null  # conflicts with SCSS variables
 
   # At-rule
   at-rule-no-unknown: null  # via scss/at-rule-no-unknown
@@ -23,6 +22,10 @@ rules:
   at-rule-disallowed-list:
     - extend
     - message: Unexpected @extend directive (at-rule-disallowed-list)
+
+
+  # Color
+  color-function-notation: legacy  # conflicts with SASS's color functions
 
 
 
