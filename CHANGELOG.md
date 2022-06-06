@@ -11,7 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-
+## [3.1.0] - 2022-06-06
+### Added
+- Creation of `@absolunet/stylelint-config-pwastudio` - PWA Studio rules
 
 ## [3.0.0] - 2021-11-11
 ### Added
