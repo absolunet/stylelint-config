@@ -1,0 +1,49 @@
+{
+  "name": "@absolunet/stylelint-config-pwastudio",
+  "version": "3.0.0",
+  "description": "stylelint config - PWA Studio rules",
+  "definition": "",
+  "homepage": "https://github.com/absolunet/stylelint-config",
+  "keywords": [
+    "stylelint",
+    "stylelintconfig",
+    "stylelint-config"
+  ],
+  "author": {
+    "name": "Absolunet",
+    "url": "https://absolunet.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "url": "git://github.com/absolunet/stylelint-config.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/absolunet/stylelint-config/issues"
+  },
+  "engines": {
+    "node": ">= 12.20.0"
+  },
+  "main": "dist/node",
+  "scripts": {
+    "test": "node test --scope=all",
+    "test:standards": "node test --scope=standards",
+    "test:unit": "node test --scope=unit",
+    "test:feature": "node test --scope=feature",
+    "test:integration": "node test --scope=integration",
+    "test:endtoend": "node test --scope=endtoend"
+  },
+  "devDependencies": {
+    "@absolunet/tester": "5.0.0-beta.5",
+    "stylelint-config-css-modules": "^4.1.0",
+    "stylelint-react-native": "^2.4.0"
+  },
+  "dependencies": {
+    "@absolunet/stylelint-config-core": "^3.0.0",
+    "@absolunet/stylelint-loader": "^3.0.0"
+  },
+  "peerDependencies": {
+    "stylelint-config-css-modules": "^4.1.0",
+    "stylelint-react-native": "^2.4.0"
+  }
+}
