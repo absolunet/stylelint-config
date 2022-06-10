@@ -7,7 +7,7 @@ plugins:
 
 rules:
   #-- Disabled rules
-  
+
   selector-class-pattern:                     null # https://github.com/css-modules/css-modules#naming
   declaration-property-value-disallowed-list: null # Need to use rem unit
   color-function-notation:                    null
@@ -49,6 +49,7 @@ rules:
   declaration-colon-space-after:  'always-single-line'
 
   declaration-empty-line-before:
+    - never
     - ignore: 'first-nested'
 
   scale-unlimited/declaration-strict-value:

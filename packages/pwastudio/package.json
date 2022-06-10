@@ -7,7 +7,8 @@
   "keywords": [
     "stylelint",
     "stylelintconfig",
-    "stylelint-config"
+    "stylelint-config",
+    "pwa-studio"
   ],
   "author": {
     "name": "Absolunet",
@@ -35,8 +36,8 @@
   },
   "devDependencies": {
     "@absolunet/tester": "5.0.0-beta.5",
-    "stylelint-config-css-modules": "^4.1.0",
-    "stylelint-react-native": "^2.4.0"
+    "stylelint-config-css-modules": "4.1.0",
+    "stylelint-react-native": "2.4.0"
   },
   "dependencies": {
     "@absolunet/stylelint-config-core": "^3.0.0",
@@ -44,6 +45,8 @@
   },
   "peerDependencies": {
     "stylelint-config-css-modules": "^4.1.0",
+    "stylelint-declaration-strict-value": "^1.8.0",
+    "stylelint-order": "^5.0.0",
     "stylelint-react-native": "^2.4.0"
   }
 }

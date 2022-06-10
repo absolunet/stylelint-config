@@ -1,13 +1,22 @@
 //--------------------------------------------------------
 //-- Config tests
 //--------------------------------------------------------
-export default ({ given, when, then }) => {
+export default ({ given, when, then, defaultCode }) => {
 	beforeEach(() => {
 		given.noException();
 		given.noRoot();
 		given.noConfig();
 		given.noResults();
 		given.currentRoot();
+
+		const code =
+			defaultCode ||
+			`/* -- */
+a {
+	/* test */
+}
+`;
+		given.code(code);
 	});
 
 	test(`Ensure YAML is parsable`, () => {
