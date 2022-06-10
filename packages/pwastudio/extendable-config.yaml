@@ -2,9 +2,6 @@ extends:
   - '@absolunet/stylelint-config-core'
   - 'stylelint-config-css-modules'
 
-plugins:
-  - stylelint-react-native
-
 rules:
   #-- Disabled rules
 
