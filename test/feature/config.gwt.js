@@ -26,6 +26,10 @@ given.noConfig = () => {
 	config = undefined;
 };
 
+given.noCode = () => {
+	code = undefined;
+};
+
 given.noResults = () => {
 	results = undefined;
 };
@@ -35,8 +39,8 @@ given.root = (value) => {
 	root = value;
 };
 
-given.code = (givenCode) => {
-	code = givenCode;
+given.code = (value) => {
+	code = value;
 };
 
 //-- When - Config
@@ -49,34 +53,6 @@ when.configIsLoaded = () => {
 when.configIsUsed = async () => {
 	when.configIsLoaded();
 
-	results = await stylelint.lint({ config, configBasedir: root, code });
-};
-
-when.configIsUsedWithSCSS = async () => {
-	given.code(`/* -- */
-// test
-
-a {
-	/* test */
-}
-`);
-	when.configIsLoaded();
-
-	results = await stylelint.lint({ config, configBasedir: root, code });
-};
-
-when.configIsUsedWithCSSModules = async () => {
-	when.configIsLoaded();
-
-	given.code(`/* -- */
-.class-a {
-    /* test */
-}
-
-.class-b {
-    composes: class-a;
-}
-`);
 	results = await stylelint.lint({ config, configBasedir: root, code });
 };
 

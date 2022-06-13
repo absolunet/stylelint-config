@@ -39,8 +39,8 @@
     "stylelint-config-css-modules": "4.1.0"
   },
   "dependencies": {
-    "@absolunet/stylelint-config-core": "^3.0.0",
-    "@absolunet/stylelint-loader": "^3.0.0"
+    "@absolunet/stylelint-config-core": "3.0.0",
+    "@absolunet/stylelint-loader": "3.0.0"
   },
   "peerDependencies": {
     "stylelint-config-css-modules": "^4.1.0"

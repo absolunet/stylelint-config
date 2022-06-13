@@ -12,4 +12,24 @@ given.currentRoot = () => {
 	given.root(path.join(__dirname, "..", "..", "dist", "node"));
 };
 
+given.currentCSSCode = () => {
+	given.code(`/* -- */
+a {
+    /* test */
+}
+`);
+};
+
+given.cssModulesCode = () => {
+	given.code(`/* -- */
+.class-a {
+    /* test */
+}
+
+.class-b {
+    composes: class-a;
+}
+`);
+};
+
 export { given, when, then };

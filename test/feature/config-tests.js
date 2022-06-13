@@ -1,22 +1,15 @@
 //--------------------------------------------------------
 //-- Config tests
 //--------------------------------------------------------
-export default ({ given, when, then, defaultCode }) => {
+export default ({ given, when, then }) => {
 	beforeEach(() => {
 		given.noException();
 		given.noRoot();
 		given.noConfig();
+		given.noCode();
 		given.noResults();
 		given.currentRoot();
-
-		const code =
-			defaultCode ||
-			`/* -- */
-a {
-	/* test */
-}
-`;
-		given.code(code);
+		given.currentCSSCode();
 	});
 
 	test(`Ensure YAML is parsable`, () => {
@@ -29,7 +22,7 @@ a {
 		then.configShouldNotBeEmpty();
 	});
 
-	test(`Ensure config can be used`, async () => {
+	test(`Ensure config can be used with vanilla CSS`, async () => {
 		await when.configIsUsed();
 		then.resultsShouldContainNoError();
 	});

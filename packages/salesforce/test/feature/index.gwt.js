@@ -12,4 +12,12 @@ given.currentRoot = () => {
 	given.root(path.join(__dirname, "..", "..", "dist", "node"));
 };
 
+given.currentCSSCode = () => {
+	given.code(`/* -- */
+a {
+	/* test */
+}
+`);
+};
+
 export { given, when, then };
