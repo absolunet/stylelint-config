@@ -15,6 +15,7 @@ const stylelint = require(require.resolve("stylelint", {
 let root;
 let config;
 let results;
+let code;
 
 //-- Given - Reset
 given.noRoot = () => {
@@ -25,6 +26,10 @@ given.noConfig = () => {
 	config = undefined;
 };
 
+given.noCode = () => {
+	code = undefined;
+};
+
 given.noResults = () => {
 	results = undefined;
 };
@@ -32,6 +37,10 @@ given.noResults = () => {
 //-- Given - Root
 given.root = (value) => {
 	root = value;
+};
+
+given.code = (value) => {
+	code = value;
 };
 
 //-- When - Config
@@ -44,24 +53,6 @@ when.configIsLoaded = () => {
 when.configIsUsed = async () => {
 	when.configIsLoaded();
 
-	const code = `/* -- */
-a {
-	/* test */
-}
-`;
-	results = await stylelint.lint({ config, configBasedir: root, code });
-};
-
-when.configIsUsedWithSCSS = async () => {
-	when.configIsLoaded();
-
-	const code = `/* -- */
-// test
-
-a {
-	/* test */
-}
-`;
 	results = await stylelint.lint({ config, configBasedir: root, code });
 };
 

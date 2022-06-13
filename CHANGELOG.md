@@ -10,7 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased]
+### Added
+- Creation of `@absolunet/stylelint-config-pwastudio` - PWA Studio rules
 
+### Changed
+- Updated `@absolunet/stylelint-core` `stylelint` dependency to 14.8.1
 
 
 ## [3.0.0] - 2021-11-11

@@ -1,13 +1,14 @@
 {
-  "name": "@absolunet/stylelint-config-core",
+  "name": "@absolunet/stylelint-config-pwastudio",
   "version": "3.0.0",
-  "description": "stylelint config - Core rules",
+  "description": "stylelint config - PWA Studio rules",
   "definition": "",
   "homepage": "https://github.com/absolunet/stylelint-config",
   "keywords": [
     "stylelint",
     "stylelintconfig",
-    "stylelint-config"
+    "stylelint-config",
+    "pwa-studio"
   ],
   "author": {
     "name": "Absolunet",
@@ -35,16 +36,13 @@
   },
   "devDependencies": {
     "@absolunet/tester": "5.0.0-beta.5",
-    "stylelint": "14.8.1",
-    "stylelint-declaration-strict-value": "1.8.0",
-    "stylelint-order": "5.0.0"
+    "stylelint-config-css-modules": "4.1.0"
   },
   "dependencies": {
+    "@absolunet/stylelint-config-core": "3.0.0",
     "@absolunet/stylelint-loader": "3.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^14.8.1",
-    "stylelint-declaration-strict-value": "^1.8.0",
-    "stylelint-order": "^5.0.0"
+    "stylelint-config-css-modules": "^4.1.0"
   }
 }
