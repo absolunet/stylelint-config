@@ -1,6 +1,6 @@
 {
   "name": "@absolunet/stylelint-config-scss",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "stylelint config for SCSS",
   "definition": "",
   "homepage": "https://github.com/absolunet/stylelint-config",
@@ -40,8 +40,8 @@
     "stylelint-scss": "4.2.0"
   },
   "dependencies": {
-    "@absolunet/stylelint-config-core": "3.0.0",
-    "@absolunet/stylelint-loader": "3.0.0"
+    "@absolunet/stylelint-config-core": "3.1.0",
+    "@absolunet/stylelint-loader": "3.1.0"
   },
   "peerDependencies": {
     "postcss-scss": "^4.0.4",

@@ -1,6 +1,6 @@
 {
   "name": "@absolunet/stylelint-config-pwastudio",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "stylelint config - PWA Studio rules",
   "definition": "",
   "homepage": "https://github.com/absolunet/stylelint-config",
@@ -39,8 +39,8 @@
     "stylelint-config-css-modules": "4.1.0"
   },
   "dependencies": {
-    "@absolunet/stylelint-config-core": "3.0.0",
-    "@absolunet/stylelint-loader": "3.0.0"
+    "@absolunet/stylelint-config-core": "3.1.0",
+    "@absolunet/stylelint-loader": "3.1.0"
   },
   "peerDependencies": {
     "stylelint-config-css-modules": "^4.1.0"

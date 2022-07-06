@@ -3,6 +3,7 @@ extends:
   - "stylelint-config-css-modules"
 
 rules:
+
   #-- Disabled rules
 
   selector-class-pattern: null # https://github.com/css-modules/css-modules#naming
@@ -11,6 +12,7 @@ rules:
   comment-empty-line-before: null
   declaration-block-trailing-semicolon: null
   no-descending-specificity: null
+
 
   #-- New and updated rules
 
@@ -307,6 +309,8 @@ rules:
           - user-select
 
     - unspecified: bottomAlphabetical
+
+
 
   #-- Tailwind
 

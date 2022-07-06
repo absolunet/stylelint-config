@@ -1,6 +1,6 @@
 {
   "name": "@absolunet/stylelint-config-core",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "stylelint config - Core rules",
   "definition": "",
   "homepage": "https://github.com/absolunet/stylelint-config",
@@ -40,7 +40,7 @@
     "stylelint-order": "5.0.0"
   },
   "dependencies": {
-    "@absolunet/stylelint-loader": "3.0.0"
+    "@absolunet/stylelint-loader": "3.1.0"
   },
   "peerDependencies": {
     "stylelint": "^14.9.1",
