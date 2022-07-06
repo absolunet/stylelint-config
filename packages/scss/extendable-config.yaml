@@ -9,7 +9,7 @@ plugins:
 
 rules:
 
-  #-- Possible errors
+  #-- Avoid errors
 
   # Function
   function-no-unknown: null  # via scss/function-no-unknown
@@ -19,7 +19,11 @@ rules:
 
 
 
-  #-- Limit language features
+  #-- Enforce conventions
+
+  # Color
+  color-function-notation: legacy  # conflicts with SASS's color functions
+
 
   # At-rule
   at-rule-disallowed-list:
@@ -27,12 +31,8 @@ rules:
     - message: Unexpected @extend directive (at-rule-disallowed-list)
 
 
-  # Color
-  color-function-notation: legacy  # conflicts with SASS's color functions
 
-
-
-  #-- Stylistic issues
+  #-- Stylistic issues (Handled by pretty printers)
 
   # Block
   block-closing-brace-newline-after:
