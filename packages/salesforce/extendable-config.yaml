@@ -1,4 +1,4 @@
-extends: '@absolunet/stylelint-config-scss'
+extends: "@absolunet/stylelint-config-scss"
 
 
 rules:
@@ -6,4 +6,4 @@ rules:
   selector-class-pattern:
     - ^([a-z][a-z0-9]*)(-[a-z0-9]+)*$|^THIS$
     - resolveNestedSelectors: true
-      message:                Class selector must be kebab-case or THIS (selector-class-pattern)
+      message: Class selector must be kebab-case or THIS (selector-class-pattern)

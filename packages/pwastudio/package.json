@@ -1,14 +1,14 @@
 {
-  "name": "@absolunet/stylelint-config-scss",
+  "name": "@absolunet/stylelint-config-pwastudio",
   "version": "3.1.0",
-  "description": "stylelint config for SCSS",
+  "description": "stylelint config - PWA Studio rules",
   "definition": "",
   "homepage": "https://github.com/absolunet/stylelint-config",
   "keywords": [
-    "scss",
     "stylelint",
     "stylelintconfig",
-    "stylelint-config"
+    "stylelint-config",
+    "pwa-studio"
   ],
   "author": {
     "name": "Absolunet",
@@ -36,15 +36,13 @@
   },
   "devDependencies": {
     "@absolunet/tester": "5.0.0-beta.5",
-    "postcss-scss": "4.0.4",
-    "stylelint-scss": "4.2.0"
+    "stylelint-config-css-modules": "4.1.0"
   },
   "dependencies": {
     "@absolunet/stylelint-config-core": "3.1.0",
     "@absolunet/stylelint-loader": "3.1.0"
   },
   "peerDependencies": {
-    "postcss-scss": "^4.0.4",
-    "stylelint-scss": "^4.2.0"
+    "stylelint-config-css-modules": "^4.1.0"
   }
 }

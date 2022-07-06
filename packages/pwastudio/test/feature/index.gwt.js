@@ -1,5 +1,5 @@
 //--------------------------------------------------------
-//-- Salesforce - Given-When-Then
+//-- Pwastudio - Given-When-Then
 //--------------------------------------------------------
 import path from "path";
 import * as gwt from "../../../../test/feature/config.gwt";
@@ -15,7 +15,19 @@ given.currentRoot = () => {
 given.currentCSSCode = () => {
 	given.code(`/* -- */
 a {
-	/* test */
+    /* test */
+}
+`);
+};
+
+given.cssModulesCode = () => {
+	given.code(`/* -- */
+.class-a {
+    /* test */
+}
+
+.class-b {
+    composes: class-a;
 }
 `);
 };
