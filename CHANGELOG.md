@@ -11,10 +11,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
-- Creation of `@absolunet/stylelint-config-pwastudio` - PWA Studio rules
+- Create `@absolunet/stylelint-config-pwastudio` - PWA Studio rules
+- `core`: Add `function-no-unknown`
+- `core`: Add `keyframe-block-no-duplicate-selectors`
+- `core`: Add `import-notation` with `string`
+- `core`: Add `selector-not-notation` with `complex`
+- `core`: Ignore `declaration-property-max-values`
+- `core`: Ignore `rule-selector-property-disallowed-list`
+- `scss`: Add `scss/at-use-no-unnamespaced`
+- `scss`: Add `scss/dollar-variable-no-namespaced-assignment`
+- `scss`: Add `scss/function-no-unknown`
 
 ### Changed
-- Updated `@absolunet/stylelint-core` `stylelint` dependency to 14.8.1
+- Update `stylelint` to 14.9.1
+- `core`: Add units `rem`, `ch`, `vmin`, `vmax` to `unit-allowed-list`
+- Maintenance updates
+
 
 
 ## [3.0.0] - 2021-11-11

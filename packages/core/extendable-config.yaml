@@ -28,6 +28,7 @@ rules:
   # Function
   function-calc-no-unspaced-operator:                true
   function-linear-gradient-no-nonstandard-direction: true
+  function-no-unknown:                               true
 
 
   # String
@@ -48,6 +49,10 @@ rules:
 
   # Keyframe declaration
   keyframe-declaration-no-important: true
+
+
+  # Keyframe block
+  keyframe-block-no-duplicate-selectors: true
 
 
   # Declaration block
@@ -117,6 +122,10 @@ rules:
   function-url-scheme-disallowed-list: null
 
 
+  # Imports
+  import-notation: string
+
+
   # Number
   number-max-precision: 10
 
@@ -131,10 +140,14 @@ rules:
 
   # Unit
   unit-allowed-list:
+    - rem
     - em
+    - ch
     - '%'
     - vw
     - vh
+    - vmin
+    - vmax
     - ms
     - s
     - deg
@@ -165,6 +178,7 @@ rules:
   # Declaration
   declaration-block-no-redundant-longhand-properties: true
   declaration-no-important:                           null
+  declaration-property-max-values:                    null
   declaration-property-unit-allowed-list:             null  # via unit-allowed-list
   declaration-property-unit-disallowed-list:          null  # via unit-allowed-list
   declaration-property-value-allowed-list:            null
@@ -214,10 +228,15 @@ rules:
   selector-nested-pattern:                     null
   selector-no-qualifying-type:                 null
   selector-no-vendor-prefix:                   true
+  selector-not-notation:                       complex
   selector-pseudo-class-allowed-list:          null
   selector-pseudo-class-disallowed-list:       null
   selector-pseudo-element-allowed-list:        null
   selector-pseudo-element-disallowed-list:     null
+
+
+  # Rules
+  rule-selector-property-disallowed-list: null
 
 
   # Media feature
