@@ -11,6 +11,9 @@ rules:
 
   #-- Possible errors
 
+  # Function
+  function-no-unknown: null  # via scss/function-no-unknown
+
   # At-rule
   at-rule-no-unknown: null  # via scss/at-rule-no-unknown
 
@@ -149,6 +152,9 @@ rules:
   scss/at-rule-conditional-no-parentheses: true
   scss/at-rule-no-unknown: true
 
+  # @-use
+  scss/at-use-no-unnamespaced: true
+
   # $-variable
   scss/dollar-variable-colon-newline-after:      null
   scss/dollar-variable-colon-space-after:        at-least-one-space
@@ -158,6 +164,7 @@ rules:
   scss/dollar-variable-empty-line-before:        null
   scss/dollar-variable-first-in-block:           null  # via order/order
   scss/dollar-variable-no-missing-interpolation: true
+  scss/dollar-variable-no-namespaced-assignment: true
   scss/dollar-variable-pattern:
     - ^([a-z][a-z0-9]*)(-[a-z0-9]+)*$
     - message: Variable name must be kebab-case (scss/dollar-variable-pattern)
@@ -183,6 +190,7 @@ rules:
 
   # Function
   scss/function-color-relative:                     null
+  scss/function-no-unknown:                         true
   scss/function-quote-no-quoted-strings-inside:     true
   scss/function-unquote-no-unquoted-strings-inside: true
 
