@@ -13,6 +13,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+## [3.1.1] - 2022-07-08
+### Fixed
+- `core`: Allow `optimizeLegibility` in `value-keyword-case`
+- `scss`: Disable `scss/function-no-unknown` until module pattern is used at large
+
+
+
 ## [3.1.0] - 2022-07-06
 ### Added
 - Create `@absolunet/stylelint-config-pwastudio` - PWA Studio rules
@@ -286,7 +293,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-[Unreleased]: https://github.com/absolunet/stylelint-config/compare/3.1.0...HEAD
+[Unreleased]: https://github.com/absolunet/stylelint-config/compare/3.1.1...HEAD
+[3.1.1]:      https://github.com/absolunet/stylelint-config/compare/3.1.0...3.1.1
 [3.1.0]:      https://github.com/absolunet/stylelint-config/compare/3.0.0...3.1.0
 [3.0.0]:      https://github.com/absolunet/stylelint-config/compare/2.0.1...3.0.0
 [2.0.1]:      https://github.com/absolunet/stylelint-config/compare/2.0.0...2.0.1

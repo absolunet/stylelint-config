@@ -12,30 +12,13 @@
 | **[@absolunet/stylelint-config-core](packages/core)** | [![npm](https://img.shields.io/npm/v/@absolunet/stylelint-config-core.svg)](https://www.npmjs.com/package/@absolunet/stylelint-config-core) | **Core rules** | [docs](https://documentation.absolunet.com/stylelint-config/core) |
 | [@absolunet/stylelint-config-scss](packages/scss) | [![npm](https://img.shields.io/npm/v/@absolunet/stylelint-config-scss.svg)](https://www.npmjs.com/package/@absolunet/stylelint-config-scss) | SCSS | [docs](https://documentation.absolunet.com/stylelint-config/scss) |
 | [@absolunet/stylelint-config-salesforce](packages/salesforce) | [![npm](https://img.shields.io/npm/v/@absolunet/stylelint-config-salesforce.svg)](https://www.npmjs.com/package/@absolunet/stylelint-config-salesforce) | Salesforce | [docs](https://documentation.absolunet.com/stylelint-config/salesforce) |
+| [@absolunet/stylelint-config-pwastudio](packages/pwastudio) | [![npm](https://img.shields.io/npm/v/@absolunet/stylelint-config-pwastudio.svg)](https://www.npmjs.com/package/@absolunet/stylelint-config-pwastudio) | PWA Studio | [docs](https://documentation.absolunet.com/stylelint-config/pwastudio) |
 
 ### Dependency tree
-```
-       ┌────────────────┐
-       │      core      │
-       └────────────────┘
-                │
-                │
-                │
-                │
-                │
-                ▼
-       ┌────────────────┐
-       │      scss      │
-       └────────────────┘
-                │
-                │
-                │
-                │
-                │
-                ▼
-       ┌────────────────┐
-       │   salesforce   │
-       └────────────────┘
+```mermaid
+  graph TD;
+    core --> scss & pwastudio
+    scss --> salesforce
 ```
 
 ## Install
