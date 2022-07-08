@@ -190,7 +190,7 @@ rules:
 
   # Function
   scss/function-color-relative: null
-  scss/function-no-unknown: true
+  scss/function-no-unknown: null # Disable until modules are used at large
   scss/function-quote-no-quoted-strings-inside: true
   scss/function-unquote-no-unquoted-strings-inside: true
 

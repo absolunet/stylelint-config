@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased]
+### Fixed
+- `core`: Allow `optimizeLegibility` in `value-keyword-case`
+- `scss`: Disable `scss/function-no-unknown` until module pattern is used at large
 
 
 
