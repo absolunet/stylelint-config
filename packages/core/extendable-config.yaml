@@ -296,7 +296,10 @@ rules:
   #-- Stylistic issues (Not handled by pretty printers)
 
   # Value
-  value-keyword-case: lower
+  value-keyword-case:
+  - lower
+  - ignoreKeywords:
+    - optimizeLegibility
 
 
   # Function
